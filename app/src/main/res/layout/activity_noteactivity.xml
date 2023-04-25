@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".noteactivity">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/logout"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logot"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@id/firsttitletext">
+
+    </ImageButton>
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Notes"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/my_primary"
+        android:id="@+id/firsttitletext"
+        >
+
+    </TextView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/mcreatenotefab"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/add"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/firsttitletext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
